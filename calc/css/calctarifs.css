@@ -12,11 +12,19 @@
 	background-color: #007bdb;
 	color: #fefefe;
 	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 0;
 }
-.calc_block .calc_block_name .calc_block_name_checkbox {}
+.calc_block .calc_block_name span {
+	font-size: 16px;
+}
+.calc_block .calc_block_name .calc_block_name_checkbox {
+	margin: 3px 10px 0 0;
+	vertical-align: top;
+}
 .calc_block .calc_block_info {
 	border: 1px solid #007bd9;
-	padding: 10px 20px;
+	padding: 10px 30px;
 }
 
 .calc_block .calc_block_info .calc_block_info_row {
@@ -90,7 +98,7 @@
 	background-color: #007bdb;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 20px;
 	border: none;
 	outline: none;
 	cursor: pointer;
