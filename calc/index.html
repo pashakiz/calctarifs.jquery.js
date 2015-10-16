@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+	<link rel="stylesheet" href="css/calctarifs.css" type="text/css">
+	<link rel="stylesheet" href="css/media.css" type="text/css">
+</head>
+<body>
+	<h1>Калькулятор расчета стоимости</h1>
+	<form action="" method="post">
+		<div class="calculator">
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="isvideo" class="calc_block_name_checkbox" checked="checked">
+					<span>Видеосъёмка</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Планирование съёмок и обслуживание курса</div>
+						<div class="price-unit"><span class="isvideo_1_price">700</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvideo_1_qty" class="isvideo_1_qty">недель</div>
+						<div class="price-total"><span class="isvideo_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Съёмка и монтаж новых лекций/семинаров</div>
+						<div class="price-unit"><span class="isvideo_2_price">600</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvideo_2_qty" class="isvideo_2_qty">пара (1.5ч)</div>
+						<div class="price-total"><span class="isvideo_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Демонстрации/документальный ролик</div>
+						<div class="price-unit"><span class="isvideo_3_price">400</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvideo_3_qty" class="isvideo_3_qty">шт.</div>
+						<div class="price-total"><span class="isvideo_3_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Трейлер</div>
+						<div class="price-unit"><span class="isvideo_4_price">3000</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvideo_4_qty" class="isvideo_4_qty">шт.</div>
+						<div class="price-total"><span class="isvideo_4_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Ролик с моушн-графикой</div>
+						<div class="price-unit"><span class="isvideo_5_price">600</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvideo_5_qty" class="isvideo_5_qty">минут</div>
+						<div class="price-total"><span class="isvideo_5_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="isvideo_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="isdevconcept" class="calc_block_name_checkbox" checked="checked">
+					<span>Разработка программы и концепции курса</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Концепция курса</div>
+						<div class="price-unit"><span class="isdevconcept_1_price">2000</span> руб.</div>
+						<div class="quantity"><input type="checkbox" name="isdevconcept_1_qty" class="isdevconcept_1_qty"></div>
+						<div class="price-total"><span class="isdevconcept_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка программы курса</div>
+						<div class="price-unit"><span class="isdevconcept_2_price">500</span> руб.</div>
+						<div class="quantity"><input type="checkbox" name="isdevconcept_2_qty" class="isdevconcept_2_qty"></div>
+						<div class="price-total"><span class="isdevconcept_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Анализ и логическое разбиение имеющихся материалов</div>
+						<div class="price-unit"><span class="isdevconcept_3_price">1000</span> руб.</div>
+						<div class="quantity"><input type="checkbox" name="isdevconcept_3_qty" class="isdevconcept_3_qty"></div>
+						<div class="price-total"><span class="isdevconcept_3_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">План производства материалов (что нужно доснимать и пр.)</div>
+						<div class="price-unit"><span class="isdevconcept_4_price">300</span> руб.</div>
+						<div class="quantity"><input type="checkbox" name="isdevconcept_4_qty" class="isdevconcept_4_qty"></div>
+						<div class="price-total"><span class="isdevconcept_4_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка системы оценок</div>
+						<div class="price-unit"><span class="isdevconcept_5_price">200</span> руб.</div>
+						<div class="quantity"><input type="checkbox" name="isdevconcept_5_qty" class="isdevconcept_5_qty"></div>
+						<div class="price-total"><span class="isdevconcept_5_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="isdevconcept_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="isteacherwork" class="calc_block_name_checkbox" checked="checked">
+					<span>Работа преподавателя на и для видео</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Подготовка к лекции или семинару</div>
+						<div class="price-unit"><span class="isteacherwork_1_price">100</span> руб.</div>
+						<div class="quantity"><input type="text" name="isteacherwork_1_qty" class="isteacherwork_1_qty">шт</div>
+						<div class="price-total"><span class="isteacherwork_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Подготовка сценария демонстрации или сложного ролика</div>
+						<div class="price-unit"><span class="isteacherwork_2_price">100</span> руб.</div>
+						<div class="quantity"><input type="text" name="isteacherwork_2_qty" class="isteacherwork_2_qty">шт</div>
+						<div class="price-total"><span class="isteacherwork_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Выступление на видео. Лекция или семинар</div>
+						<div class="price-unit"><span class="isteacherwork_3_price">400</span> руб.</div>
+						<div class="quantity"><input type="text" name="isteacherwork_3_qty" class="isteacherwork_3_qty">час</div>
+						<div class="price-total"><span class="isteacherwork_3_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Выступление на видео. Демонстрация или сложный ролик</div>
+						<div class="price-unit"><span class="isteacherwork_4_price">400</span> руб.</div>
+						<div class="quantity"><input type="text" name="isteacherwork_4_qty" class="isteacherwork_4_qty">час</div>
+						<div class="price-total"><span class="isteacherwork_4_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Обслуживающий персонал (например, лаборатория)</div>
+						<div class="price-unit"><span class="isteacherwork_5_price">200</span> руб.</div>
+						<div class="quantity"><input type="text" name="isteacherwork_5_qty" class="isteacherwork_5_qty">час</div>
+						<div class="price-total"><span class="isteacherwork_5_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="isteacherwork_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="istesttasks" class="calc_block_name_checkbox" checked="checked">
+					<span>Тесты, задачи и конспекты</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Разработка вопросов к видео</div>
+						<div class="price-unit"><span class="istesttasks_1_price">200</span> руб.</div>
+						<div class="quantity"><input type="text" name="istesttasks_1_qty" class="istesttasks_1_qty">недель</div>
+						<div class="price-total"><span class="istesttasks_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка тестов (условий и вариантов ответа)</div>
+						<div class="price-unit"><span class="istesttasks_2_price">500</span> руб.</div>
+						<div class="quantity"><input type="text" name="istesttasks_2_qty" class="istesttasks_2_qty">недель</div>
+						<div class="price-total"><span class="istesttasks_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка условий задач</div>
+						<div class="price-unit"><span class="istesttasks_3_price">300</span> руб.</div>
+						<div class="quantity"><input type="text" name="istesttasks_3_qty" class="istesttasks_3_qty">недель</div>
+						<div class="price-total"><span class="istesttasks_3_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка решений задач</div>
+						<div class="price-unit"><span class="istesttasks_4_price">1000</span> руб.</div>
+						<div class="quantity"><input type="text" name="istesttasks_4_qty" class="istesttasks_4_qty">недель</div>
+						<div class="price-total"><span class="istesttasks_4_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Разработка конспектов</div>
+						<div class="price-unit"><span class="istesttasks_5_price">500</span> руб.</div>
+						<div class="quantity"><input type="text" name="istesttasks_5_qty" class="istesttasks_5_qty">недель</div>
+						<div class="price-total"><span class="istesttasks_5_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="istesttasks_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="isvalidate" class="calc_block_name_checkbox" checked="checked">
+					<span>Тестирование, валидации и доработка</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Тестирование видео на неточноcти</div>
+						<div class="price-unit"><span class="isvalidate_1_price">500</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvalidate_1_qty" class="isvalidate_1_qty">недель</div>
+						<div class="price-total"><span class="isvalidate_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Тестирование условий и решений задач и тестов</div>
+						<div class="price-unit"><span class="isvalidate_2_price">900</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvalidate_2_qty" class="isvalidate_2_qty">недель</div>
+						<div class="price-total"><span class="isvalidate_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Набор текстов и формул</div>
+						<div class="price-unit"><span class="isvalidate_3_price">300</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvalidate_3_qty" class="isvalidate_3_qty">недель</div>
+						<div class="price-total"><span class="isvalidate_3_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Создание картинок и схем</div>
+						<div class="price-unit"><span class="isvalidate_4_price">300</span> руб.</div>
+						<div class="quantity"><input type="text" name="isvalidate_4_qty" class="isvalidate_4_qty">недель</div>
+						<div class="price-total"><span class="isvalidate_4_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="isvalidate_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+			<div class="calc_block">
+				<label class="calc_block_name">
+					<input type="checkbox" name="isadd" class="calc_block_name_checkbox" checked="checked">
+					<span>Дополнительно</span>
+				</label>
+				<div class="calc_block_info">
+					<div class="calc_block_info_row">
+						<div class="title">Ответы на вопросы на форуме</div>
+						<div class="price-unit"><span class="isadd_1_price">800</span> руб.</div>
+						<div class="quantity"><input type="text" name="isadd_1_qty" class="isadd_1_qty">недель</div>
+						<div class="price-total"><span class="isadd_1_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">Координация работы всех участников, технические задачи, управление курсом на платформе</div>
+						<div class="price-unit"><span class="isadd_2_price">1200</span> руб.</div>
+						<div class="quantity"><input type="text" name="isadd_2_qty" class="isadd_2_qty">недель</div>
+						<div class="price-total"><span class="isadd_2_total">0</span> руб.</div>
+					</div>
+					<div class="calc_block_info_row">
+						<div class="title">ВСЕГО</div>
+						<div class="price-total"><span class="isadd_total">0</span> руб.</div>
+					</div>
+				</div> <!-- .calc_block_info -->
+			</div> <!-- .calc-block -->
+
+		</div> <!-- .calculator -->
+		<div class="calc_block result">
+			<div class="calc_block_info">
+				<div class="calc_block_info_row">
+					<div class="title">ИТОГО ВЕСЬ КУРС</div>
+					<div class="price-total"><span class="all_total">0</span> руб.</div>
+				</div>
+			</div>
+		</div>
+		<div class="order">
+			<button class="btn_order" type="submit">Заказать</button>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/calctarifs.jquery.js"></script>
+</body>
+</html>

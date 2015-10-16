@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+	<link rel="stylesheet" href="css/calctarifs.css" type="text/css">
+	<link rel="stylesheet" href="css/media.css" type="text/css">
+</head>
+<body>
+	<h1>Калькулятор расчета стоимости</h1>
+	<div class="calculator">
+		<form action="">
+			<div class="calc_block">
+				<div class="calc_block_name">
+					<input type="checkbox" name="isvideo" class="calc_block_name_checkbox" checked>
+					<span>Видеосъёмка</span>
+				</div>
+				<div class="calc_block_wrap">
+					<table class="calc_block_table">
+						<tbody>
+							<tr>
+								<td>Планирование съёмок и обслуживание курса</td>
+								<td><span class="isvideo_1_price">700</span> руб.</td>
+								<td><input type="text" name="isvideo_1_qty" class="isvideo_1_qty"> недель</td>
+								<td><span class="isvideo_1_total">8400</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Съёмка и монтаж новых лекций/семинаров</td>
+								<td><span class="isvideo_2_price">600</span> руб.</td>
+								<td><input type="text" name="isvideo_2_qty" class="isvideo_2_qty"> пара (1.5ч)</td>
+								<td><span class="isvideo_2_total">8400</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Демонстрации/документальный ролик</td>
+								<td><span class="isvideo_3_price">400</span> руб.</td>
+								<td><input type="text" name="isvideo_3_qty" class="isvideo_3_qty"> шт.</td>
+								<td><span class="isvideo_3_total">400</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Трейлер</td>
+								<td><span class="isvideo_4_price">3000</span> руб.</td>
+								<td><input type="text" name="isvideo_4_qty" class="isvideo_4_qty"> шт.</td>
+								<td><span class="isvideo_4_total">3000</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Ролик с моушн-графикой</td>
+								<td><span class="isvideo_5_price">600</span> руб.</td>
+								<td><input type="text" name="isvideo_5_qty" class="isvideo_5_qty"> минут</td>
+								<td><span class="isvideo_5_total">0</span> руб.</td>
+							</tr>
+							<tr>
+								<td>ВСЕГО</td>
+								<td></td>
+								<td></td>
+								<td><span class="isvideo_total">20200</span> руб.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- .calc_block_border -->
+			</div> <!-- .calc-block -->
+			<div class="calc_block">
+				<div class="calc_block_name">
+					<input type="checkbox" name="isdevconcept" class="calc_block_name_checkbox">
+					<span>Разработка программы и концепции курса</span>
+				</div>
+				<div class="calc_block_wrap">
+					<table class="calc_block_table">
+						<tbody>
+							<tr>
+								<td>Концепция курса</td>
+								<td><span class="isdevconcept_1_price">2000</span> руб.</td>
+								<td><input type="text" name="isdevconcept_1_qty" class="isdevconcept_1_qty"> -</td>
+								<td><span class="isdevconcept_1_total">2000</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Разработка программы курса</td>
+								<td><span class="isdevconcept_2_price">500</span> руб.</td>
+								<td><input type="text" name="isdevconcept_2_qty" class="isdevconcept_2_qty"> -</td>
+								<td><span class="isdevconcept_2_total">500</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Анализ и логическое разбиение имеющихся материалов</td>
+								<td><span class="isdevconcept_3_price">1000</span> руб.</td>
+								<td><input type="text" name="isdevconcept_3_qty" class="isdevconcept_3_qty"> -</td>
+								<td><span class="isdevconcept_3_total">1000</span> руб.</td>
+							</tr>
+							<tr>
+								<td>План производства материалов (что нужно доснимать и пр.)</td>
+								<td><span class="isdevconcept_4_price">300</span> руб.</td>
+								<td><input type="text" name="isvideo_4_qty" class="isdevconcept_4_qty"> -</td>
+								<td><span class="isdevconcept_4_total">300</span> руб.</td>
+							</tr>
+							<tr>
+								<td>Разработка системы оценок</td>
+								<td><span class="isdevconcept_5_price">200</span> руб.</td>
+								<td><input type="text" name="isdevconcept_5_qty" class="isdevconcept_5_qty"> -</td>
+								<td><span class="isdevconcept_5_total">200</span> руб.</td>
+							</tr>
+							<tr>
+								<td>ВСЕГО</td>
+								<td></td>
+								<td></td>
+								<td><span class="isdevconcept_total">4000</span> руб.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- .calc_block_border -->
+			</div> <!-- .calc-block -->
+		</form>
+	</div> <!-- .calculator -->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/calctarifs.js"></script>
+</body>
+</html>

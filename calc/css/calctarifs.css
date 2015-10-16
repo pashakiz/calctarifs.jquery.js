@@ -1,0 +1,100 @@
+.calculator {
+	color: #343434
+}
+.calculator .calc_block {
+	margin-top: 30px;
+}
+.calc_block:first-child {
+	margin-top: 0;
+}
+.calc_block .calc_block_name {
+	display: inline-block;
+	background-color: #007bdb;
+	color: #fefefe;
+	cursor: pointer;
+}
+.calc_block .calc_block_name .calc_block_name_checkbox {}
+.calc_block .calc_block_info {
+	border: 1px solid #007bd9;
+	padding: 10px 20px;
+}
+
+.calc_block .calc_block_info .calc_block_info_row {
+	padding: 10px 0;
+	font-size: 0;
+}
+.calc_block .calc_block_info .calc_block_info_row div {
+	display: inline-block;
+	font-size: 14px;
+
+}
+.calc_block .calc_block_info .calc_block_info_row .title {
+	width: 50%;
+}
+.calc_block .calc_block_info .calc_block_info_row .price-unit {
+	width: 9%;
+	padding-left: 1%;
+	margin-right: 10%;
+	text-align: right;
+}
+.calc_block .calc_block_info .calc_block_info_row .quantity {
+	width: 16%;
+}
+.calc_block .calc_block_info .calc_block_info_row .quantity input[type=text] {
+	width: 40px;
+	background-color: #e5eff8;
+	border: 1px solid #9d9d9d;
+	padding: 7px 0;
+	margin-right: 8px;
+	text-align: center;
+}
+.calc_block .calc_block_info .calc_block_info_row .quantity input[type=checkbox] {
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	vertical-align: middle;
+}
+.calc_block .calc_block_info .calc_block_info_row .price-total {
+	width: 14%;
+	text-align: right;
+}
+.calc_block .calc_block_info .calc_block_info_row:last-child .title,
+.calc_block .calc_block_info .calc_block_info_row:last-child .price-total {
+	width: 50%;
+}
+
+.calc_block.disabled .calc_block_name {
+	background-color: #9d9d9d;
+}
+.calc_block.disabled .calc_block_info {
+	background-color: #e5eff8;
+	border: 1px solid #9d9d9d;
+	color: #9d9d9d;
+}
+.calc_block.disabled .calc_block_info .calc_block_info_row .quantity input[type=text] {
+	background-color: #ece8e9;
+}
+.calc_block.disabled .calc_block_info .calc_block_info_row .quantity input[type=text]:disabled {
+	color: #9d9d9d
+}
+
+.calc_block.result .calc_block_info {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.order {
+	text-align: center;
+}
+.btn_order {
+	background-color: #007bdb;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 70px auto 0;
+	padding: 20px 60px;
+}
+
