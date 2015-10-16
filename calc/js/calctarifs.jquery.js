@@ -1,17 +1,15 @@
 $(document).ready(function(){
 	
-
-	$('input.calc_block_name_checkbox').on('click', function (){
+	$('input.calc_block_name_checkbox').on('click', function (){ debugger;
 		var isCheck = $(this).prop('checked');
 		if (isCheck) {
-			$(this).parent().parent('.calc_block').toggleClass('disabled');
+			$(this).parent().parent('.calc_block').removeClass('disabled');
 			$(this).parent().parent('.calc_block').find('.calc_block_info input').prop('disabled', false);
 		} else {
-			$(this).parent().parent('.calc_block').toggleClass('disabled');
+			$(this).parent().parent('.calc_block').addClass('disabled');
 			$(this).parent().parent('.calc_block').find('.calc_block_info input').prop('disabled', true);
 		}
 	});
-
 
 	$('.calculator').on('click keyup', valParam);
 
@@ -26,8 +24,6 @@ function valParam () {
 	var isValidate = $('input.calc_block_name_checkbox[name="isvalidate"]').prop('checked');
 	var isAdd = $('input.calc_block_name_checkbox[name="isadd"]').prop('checked');
 	var isDevConceptSumm = 0, isVideoSumm = 0, isTeacherWorkSumm = 0, isTestTasksSumm = 0, isValidateSumm = 0, isAddSumm = 0;
-
-	console.log("valParam");
 
 	if (isVideo) {
 		isVideoSumm = CalcItemsQty('isvideo', 5);
